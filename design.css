@@ -1,0 +1,220 @@
+
+.oswald-typography {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.playpen-sans-typography{
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+	background-color: #FFFFFF;
+}
+#header{
+	width: 100%;
+	margin-bottom: 13px;
+}
+#header h1 {
+	font-family: Sans-serif;
+	font-size: 80px;
+	padding-left: 80px;
+	font-weight: bolder;
+	text-shadow: 3px 3px 5px black;
+	color: rgb(138, 135, 128);
+}
+#about {
+	width: 100%;
+	padding-left: 100px;
+	padding-top: 50px;
+	padding-right: 100px;
+	padding-bottom: 50px;
+	display: flex;
+	justify-content: space-evenly;
+}
+#about img {
+	border: 6px solid rgb(225, 221, 237);
+}
+#about #bio {
+	width: 40%;
+	text-wrap: wrap;
+	height: fit-content;
+	margin-top: 30px;
+	font-size: 14px;
+	color: #222224;
+	font-family: Courier New;
+}
+#programming-languages-introduction {
+	margin-left: 50px;
+}
+#programming-languages-section, #skills-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.language-row, .skills-holder {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.language {
+	width: 400px;
+	height: 200px;
+	background-color: rgb(237, 158, 78);
+	margin: 40px;
+	border: 1px solid rgb(237, 158, 78);
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.language .lang-logo {
+	margin: 10px;
+	border: 1px solid rgb(237, 158, 78);
+	border-radius: 4px;
+}
+.language .lang-name {
+	align-self: center;
+	font-style: bolder;
+	color: #FFFFFF;
+}
+#skills-introduction {
+	margin-left: 50px;
+}
+.skill {
+	width: 400px;
+	height: 90px;
+	background-color: rgb(237, 158, 78);
+	border: 1px solid rgb(237, 158, 78);
+	margin: 40px;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+}
+.icon {
+	width: 100px;
+	height: 70px;
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	border-radius: 4px;
+	margin: 13px;
+}
+.skill h3 {
+	align-self: center;
+}
+.skill-img {
+	width: 100%;
+	height: 100%;
+}
+#container-certifications {
+	background-color: rgb(237, 158, 78);
+	padding: 35px;
+}
+#personal-certifications {
+	display: flex;
+	justify-content: space-evenly;
+}
+.certification {
+	margin: 13px;
+	width: 400px;
+	height: 300px;
+	border: 3px solid rgb(237, 158, 78);
+	padding-left: 15px;
+	background-color: #FFFFFF;
+	border-radius: 17px;
+	display: flex;
+	flex-direction: column;
+}
+.certification-title {
+	font-size: 20px;
+}
+.certification-logo {
+	align-self: center;
+}
+.hobbies-introduction {
+	font-size: 65px;
+	font-weight: bolder;
+}
+#hobbies {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: rgb(237, 158, 78);
+}
+.hobby {
+	border: 1px solid #FFFFFF;
+	border-radius: 4px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #FFFFFF;
+	width: 300px;
+}
+.hobby-name {
+	font-size: 25px;
+}
+.hobby-visual {
+	width: 300px;
+	height: 250px;
+}
+blockquote {
+font-size: 100px;
+background-color: rgba(237, 158, 78, 0.8);
+width: 100%;
+margin-left: 0px;
+}
+
+#ending p {
+	text-align: center;
+}
+#social-media {
+	display: flex;
+	justify-content: space-evenly;
+}
+.social {
+	width: 333px;
+	height: 111px;
+	background-color: rgb(193, 196, 201);
+}
+#download-button {
+	width: 150px;
+	height: 50px;
+	background-color: rgb(59, 237, 14);
+	border: 1px solid rgb(59, 237, 14);
+	margin-left: 45%;
+  	position: relative;
+  	top: 50%;
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+#download-button a {
+	color: white;
+	font-weight: bolder;
+}
+#download-button a:hover {
+	color: #000000;
+	font-weight: bolder;
+}
+.sm-icon {
+	background-color: rgb(237, 158, 78);
+	width: 100px;
+	border-radius: 14px;
+	margin-left: 5px;
+	padding-left: 9px;
+}
+.social {
+	display: flex;
+	justify-content: space-evenly;
+}
+.social-media-name {
+	align-self: center;
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+.social-media-name:hover {
+	color: black;
+}
+
