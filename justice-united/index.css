@@ -1,0 +1,267 @@
+body {
+    background:#2b0335;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+#header-bar {
+    width: 100%;
+}
+#header-bar ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4d0299;
+    padding-bottom: 14px;
+}
+#header-bar ul li {
+    list-style-type: none;
+    background-color:rgba(228, 13, 99, 0.133);
+    padding: 14px;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+#header-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#header-bar ul li:nth-last-child(1){
+    list-style-type: none;
+    background-color:rgb(68, 255, 155);
+    color: #2b0335;
+    padding: 14px;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+#header-bar ul li:not(:nth-last-child(1)):hover {
+    background-color: #349918;
+    border: 1px solid #349918;
+}
+section#introduction {
+    height: 650px;
+}
+section#introduction h1 {
+    font-size: 98px;
+    top: -80px;
+    position:relative;
+    width: 50%;
+    text-wrap: wrap;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 12%;
+}
+section#introduction h2 {
+    position: relative;
+    top: -140px;
+    margin-left: 12%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 40%;
+    text-wrap: text;
+    font-weight: lighter;
+    font-size: 20px;
+}
+section#introduction #get-started-home {
+    border-radius: 34px;
+    background-color: rgb(68, 255, 155);
+    color: #2b0335;
+    font-weight: bold;
+    padding: 4px;
+    border: 2px solid rgb(68, 255, 155);
+    font-size: 18px;
+
+    position: relative;
+    top: -620px;
+    left: 180px;
+    cursor: pointer;
+}
+section#introduction #home-picture {
+    position: relative;
+    left: 800px;
+    border-radius: 40px;
+    top: -620px;
+}
+
+section#Legal-Rights {
+    background-color: #242429;
+   /* border: 1px solid #ffffff; */
+    height: 400px;
+    margin-top: 5px;
+}
+#landing-image {
+    width: 15%;
+    height: 75%;
+    margin-left: 10%;
+    margin-top: 3%;
+   /* border: 1px solid #ffffff;*/
+}
+section#Legal-Rights div#text-content, section#Legal-aid-services div#text-content, section#court-cases div#text-content {
+    position: relative;
+    /* border: 1px solid #ffffff; */
+    left: 400px;
+    bottom: 304px;
+    width: 70%;
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+section#Legal-Rights div#text-content h2, section#Legal-aid-services div#text-content h2, 
+section#court-cases div#text-content h2, section#contact-us h2#title,
+section#about h2{
+    font-weight: lighter;
+    font-size: 40px;
+    margin-top: 2px;
+    /*  #FDC4C4, #C8C7FF */
+   background:  linear-gradient(to right, #FDC4C4,#C8C7FF);
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-align: center;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+section#Legal-Rights div#text-content div#holder {
+    display: flex;
+    justify-content: space-evenly;
+    overflow-wrap: wrap;
+}
+section#Legal-Rights div#text-content div#holder div.law {
+   /*border: 1px solid #ffffff;*/
+   width: 240px;
+   height: 80px;
+
+}
+section#Legal-Rights div#text-content div#holder div.law h6.count {
+    font-weight: lighter;
+    font-size: 40px;
+    width:45px;
+    height: 45px;
+    background-color: grey;
+    text-align: center;
+    position: relative;
+    top: -70px;
+}
+section#Legal-Rights div#text-content div#holder div.law p.law-description {
+    position:relative;
+    top: -195px;
+    left: 60px;
+}
+section#Legal-Rights div#text-content div#holder div.law p.moreinfo {
+    width: 220px;
+    text-wrap: wrap;
+   /* border: 1px solid grey;*/
+    position:relative;
+    font-weight: lighter;
+    top: -190px;
+    opacity: 0.8;
+}
+section#Legal-Rights div#text-content p.more{
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    margin: auto;
+    font-weight: bolder;
+    display:flex;
+   justify-content: center;
+   align-items:center;
+   margin-top: 88px;
+}
+section#Legal-Rights div#text-content p.more:hover {
+    background-color: rgb(198, 151, 81);
+    cursor: pointer;
+}
+section#Legal-Rights div#text-content p.more a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+section#Legal-aid-services {
+    height: 400px;
+    background-color: #242429;
+   /* border: 1px solid #FFFFFF;*/
+   margin-top: 5px;
+}
+section#Legal-aid-services div#text-content p.legal-item {
+    margin-left: 250px;
+    opacity: 0.7;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+section#Legal-aid-services div#text-content p.see-more-about-legal {
+    margin-left: 250px;
+    opacity: 0.8;
+    color:rgb(220, 197, 197);
+}
+.see-more-about-legal:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section#court-cases{
+    margin-top: 5px;
+    height: 400px;
+    background-color: #242429;
+   /* border: 1px solid #FFFFFF; */
+}
+section#court-cases div#text-content p#description {
+    margin-left: 310px;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+section#court-cases div#text-content input#court-case-log-in {
+    width: 100px;
+    height: 60px;
+    background-color: #FDC4C4;
+    color:#ed5959;
+    border: 1px solid #242429;
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size:large;
+    cursor: pointer;
+    margin-left: 310px;
+    margin-top: 50px;
+}
+section#court-cases div#text-content input#court-case-log-in:hover {
+    background-color: #ed5959;
+    color: #FDC4C4;
+}
+section#contact-us{
+    margin-top: 5px;
+    height: 400px;
+    background-color: #242429;
+    /*border: 1px solid #FFFFFF;*/
+}
+
+section#contact-us div.contact-alternatives {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h3.method {
+    font-weight: lighter;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #606071;
+    font-size: 30px;
+}
+p.method-description {
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#606071;
+}
+
+section#about{
+    margin-top: 5px;
+    height: 400px;
+    background-color: #242429;
+    /*border: 1px solid #FFFFFF;*/
+}
+
+section#about div#partners {
+    display: flex;
+    justify-content: space-around;
+}
+
+.partner-img {
+    width: 200px;
+    height: 150px;
+}
+
