@@ -223,32 +223,34 @@ margin-left: 0px;
 /* Media query for smartphones */
 @media (max-width: 767px) {
 body {
-	background-color: #FFFFFF;
+	background-color: #C1A194;
 }
 #header{
 	width: 100%;
 	margin-bottom: 13px;
+	display: flex;
+	justify-content: space-evenly;
 }
 #header h1 {
 	font-family: Sans-serif;
-	font-size: 80px;
-	padding-left: 80px;
+	font-size: 50px;
+	padding-left: 50px;
 	font-weight: bolder;
 	text-shadow: 3px 3px 5px black;
-	color: rgb(138, 135, 128);
+	color: #9d446A;
 }
 #about {
 	width: 100%;
-	padding-left: 100px;
-	padding-top: 50px;
-	padding-right: 100px;
-	padding-bottom: 50px;
+	padding-left: 75px;
+	padding-top: 37px;
+	padding-right: 75px;
+	padding-bottom: 37px;
 	display: flex;
 	justify-content: space-evenly;
 	font-weight: bold;
 }
 #about img {
-	border: 6px solid rgb(225, 221, 237);
+	border: 6px solid #653958;
 }
 #about #bio {
 	width: 40%;
@@ -256,7 +258,7 @@ body {
 	height: fit-content;
 	margin-top: 30px;
 	font-size: 14px;
-	color: #222224;
+	color: #000000;
 	font-family: Courier New;
 }
 #programming-languages-introduction {
