@@ -224,6 +224,7 @@ margin-left: 0px;
 @media (max-width: 767px) {
 body {
 	background-color: #C1A194;
+	overflow-x: hidden;
 }
 #header{
 	width: 100%;
@@ -251,7 +252,7 @@ body {
 	border: 6px solid #653958;
 }
 #about #bio {
-	width: 60%;
+	width: 89px;
 	text-wrap: wrap;
 	height: fit-content;
 	margin-top: 30px;
