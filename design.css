@@ -11,7 +11,7 @@
   font-style: normal;
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
 body {
 	background-color: #FFFFFF;
 }
@@ -36,15 +36,17 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 }
-#about img {
+#about img#profile-pic {
 	border: 6px solid rgb(225, 221, 237);
+	width: 500px;
+	height: 500px;
 }
 #about #bio {
 	width: 40%;
 	text-wrap: wrap;
 	height: fit-content;
 	margin-top: 30px;
-	font-size: 14px;
+	font-size: 20px;
 	color: #222224;
 	font-family: Courier New;
 }
@@ -232,7 +234,7 @@ body {
 }
 #header h1 {
 	font-family: Sans-serif;
-	font-size: 80px;
+	font-size: 34px;
 	padding-left: 50px;
 	font-weight: bolder;
 	text-shadow: 3px 3px 5px #ffffff;
@@ -240,26 +242,27 @@ body {
 }
 #about {
 	min-width: 100%;
-	padding-left: 75px;
 	padding-top: 37px;
-	padding-right: 75px;
 	padding-bottom: 37px;
 	display: flex;
 	justify-content: space-between;
 	font-weight: bold;
 }
-#about img {
+#about img#profile-pic {
 	border: 6px solid #653958;
+	width: 250px;
+	height: 250px;
 }
 #about #bio {
-	width: 89px;
+	width: 250px;
 	text-wrap: wrap;
 	height: fit-content;
-	margin-top: 30px;
 	font-size: 14px;
 	color: #000000;
 	font-family: Courier New;
 	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 3px;
 }
 #programming-languages-introduction {
 	margin-left: 50px;
@@ -271,28 +274,28 @@ body {
 }
 .language-row, .skills-holder {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-evenly;
 }
 .language {
-	width: 400px;
+	width: 300px;
 	height: 200px;
-	background-color: rgb(237, 158, 78);
+	background-color: #F67989;
 	margin: 40px;
-	border: 1px solid rgb(237, 158, 78);
+	border: 1px solid #F67989;
 	border-radius: 4px;
 	display: flex;
 	justify-content: space-evenly;
 }
 .language .lang-logo {
 	margin: 10px;
-	border: 1px solid rgb(237, 158, 78);
+	border: 1px solid #F67989;
 	border-radius: 4px;
 }
 .language .lang-name {
 	align-self: center;
 	font-style: bolder;
-	color: #FFFFFF;
+	color: #000000;
 }
 #skills-introduction {
 	margin-left: 50px;
@@ -300,8 +303,8 @@ body {
 .skill {
 	width: 400px;
 	height: 90px;
-	background-color: rgb(237, 158, 78);
-	border: 1px solid rgb(237, 158, 78);
+	background-color: #F67989;
+	border: 1px solid #F67989;
 	margin: 40px;
 	border-radius: 4px;
 	display: flex;
@@ -310,8 +313,8 @@ body {
 .icon {
 	width: 100px;
 	height: 70px;
-	background-color: #FFFFFF;
-	border: 1px solid #FFFFFF;
+	background-color: #F67989;
+	border: 1px solid #F67989;
 	border-radius: 4px;
 	margin: 13px;
 }
@@ -323,29 +326,51 @@ body {
 	height: 100%;
 }
 #container-certifications {
-	background-color: rgb(237, 158, 78);
 	padding: 35px;
+	width: fit-content;
 }
 #personal-certifications {
 	display: flex;
-	justify-content: space-evenly;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 20px;
 }
 .certification {
-	margin: 13px;
-	width: 400px;
-	height: 300px;
-	border: 3px solid rgb(237, 158, 78);
+	width: 320px;
+	height: fit-content;
 	padding-left: 15px;
-	background-color: #FFFFFF;
+	background-color: #ECD1B4;
+	border: 1px solid #ECD1B4;
 	border-radius: 17px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 76px;
+}
+.certification:hover{	
+	cursor: pointer;
 }
 .certification-title {
-	font-size: 20px;
+	font-size: 17px;
+	margin-top: 0px;
 }
 .certification-logo {
+	margin-top: -30px;
 	align-self: center;
+}
+.certification-link a{
+	color: #000000;
+	cursor: pointer;
+	text-decoration:none;
+}
+.certification-link a:hover{
+	color: #D1DDED;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.certification-link a:visited{
+	color: #181919;
 }
 .hobbies-introduction {
 	font-size: 65px;
@@ -353,18 +378,20 @@ body {
 }
 #hobbies {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: space-evenly;
-	background-color: rgb(237, 158, 78);
 }
 .hobby {
-	border: 1px solid #FFFFFF;
+	border: 1px solid #F67989;
 	border-radius: 4px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: #FFFFFF;
+	background-color: #F67989;
 	width: 300px;
+	font-family: sans-serif;
 }
 .hobby-name {
 	font-size: 25px;
@@ -374,10 +401,12 @@ body {
 	height: 250px;
 }
 blockquote {
-font-size: 100px;
-background-color: rgba(237, 158, 78, 0.8);
+font-size: 21px;
+background-color: #F67989;
 width: 100%;
-margin-left: 0px;
+margin-left: 21px;
+max-width: fit-content;
+min-width: fit-content;
 }
 
 #ending p {
@@ -395,13 +424,18 @@ margin-left: 0px;
 #download-button {
 	width: 150px;
 	height: 50px;
-	background-color: rgb(59, 237, 14);
-	border: 1px solid rgb(59, 237, 14);
-	margin-left: 45%;
+	background-color:#FDD937;
+	border: 1px solid #FDD937;
+	margin-left: 35%;
   	position: relative;
   	top: 50%;
   	-ms-transform: translateY(-50%);
   	transform: translateY(-50%);
+  	
+}
+#download-button:hover{
+	background-color: #FDA91B;
+	border: 1px solid #ffffff;
 }
 #download-button a {
 	color: white;
@@ -412,21 +446,27 @@ margin-left: 0px;
 	font-weight: bolder;
 }
 .sm-icon {
-	background-color: rgb(237, 158, 78);
-	width: 100px;
-	border-radius: 14px;
-	margin-left: 5px;
-	padding-left: 9px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: fit-content;
 }
 .social {
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
+	margin-right: 20px;
+	width: fit-content;
+	height: fit-content;
+	background-color: rgba(1, 12, 23, 0);
 }
 .social-media-name {
 	align-self: center;
 	text-decoration: none;
 	color: black;
 	cursor: pointer;
+	margin-left: 5px;
 }
 .social-media-name:hover {
 	color: black;
