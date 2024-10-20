@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Location Map</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="leaflet.css"
+        integrity="sha256-sA+4u2+8J5poVxnwRSlm9gPD2vJUDrM1zj2a+gqQ/VE=" crossorigin="" />
+    <style>
+        /* Style for the map container */
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+
+        /* Style for status message */
+        #status {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="status">Obtaining your location...</div>
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="leaflet-src.js"
+        integrity="sha256-o9N1j4yM5kPzk5kK7LFHXY5eY7GxC+PlUPuj2bmcY+M=" crossorigin=""></script>
+
+    <script>
+        // Function to display the map and user location
+        function showMap(lat, lng) {
+
+            const map = L.map('map').setView([lat, lng], 13);  // Initialize map centered on user location
+
+            // Set up OpenStreetMap tiles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Add a marker at user's location
+            const marker = L.marker([lat, lng]).addTo(map)
+                .bindPopup('You are here!')
+                .openPopup();
+        }
+
+        // Function to handle successful geolocation
+        function success(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+
+            // Show location on the map
+            showMap(latitude, longitude);
+
+            // Update status with latitude and longitude
+            document.getElementById('status').textContent = `Latitude: ${latitude.toFixed(5)}, Longitude: ${longitude.toFixed(5)}`;
+        }
+
+        // Function to handle geolocation errors
+        function error() {
+            document.getElementById('status').textContent = 'Unable to retrieve your location.';
+        }
+
+        // Request user's location when the page loads
+        window.onload = function () {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(success, error, {
+                    enableHighAccuracy: true,  // Get the most accurate location
+                    timeout: 10000,            // Maximum waiting time to get location (10s)
+                    maximumAge: 0              // Ensure location is not cached
+                });
+            } else {
+                document.getElementById('status').textContent = 'Geolocation is not supported by your browser.';
+            }
+        };
+    </script>
+</body>
+</html>
